@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-image: linear-gradient(to bottom, #50bbec, #f5f5dc);
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+            }
+            .gallery img {
+                margin: 10px auto;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Linha do tempo do amor</h2>
+    <div>        
+        Cê deve ta achando meio retardado eu de novo pegando umas fotinhas e
+        juntando, mas é que eu gosto de relembrar da nossa história, que por sinal
+        daria um filme que nós dois gostariamos de assistir.<br><br>
+        Não seria um conto de fadas, mas sim uma comédia romântica
+        com uma história complexa e com uma pitada de drama e caos <br><em>(finge
+        que nossas brigas foram pra deixar o
+        espectador apreensivo achando que pode dar errado 👀).</em><br><br>
+        Então dessa vez vou tentar contar como se fosse um livro.
+    </div>
+    
+    <div class="navigation">
+        <button onclick="location.href='intro.html'">Começar o livro</button>
+    </div>
+</body>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    .navigation button {
+        background-color: #333;
+        color: #fff;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: #555;
+    }
+</style>
+</html>

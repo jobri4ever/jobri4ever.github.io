@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-image: linear-gradient(to bottom, #50bbec, #f5f5dc);
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        figcaption {
+            margin: 1px;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+            }
+            .gallery img {
+                margin: 10px auto;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Baby Brida</h2>
+    <div class="gallery">
+        <figure>
+            <img src="bebe brida.jpg" alt="Baby brida">
+            <figcaption>Tudo começou em 25 de fevereiro de 1994 em uma
+                metropole rural, chamada <em>Teófilo Otoni</em>, um pai meio
+                bravo mas muito inteligente e uma mãe meio doida mas muito amorosa
+                deram vida a menina dos meus sonhos. </figcaption>
+            <img src="esquisita.jpg" alt="Esquisita">
+            <figcaption>Essa meninha foi crescendo e se tornou uma adolescente linda <s>e meio esquisita</s>
+                e amorosa. Na adolescente, na fase que os hormonios começam a se aflorar, ela teve
+                a benção de ter um contato prematuro com a internet que fez ela desenvolver o lado
+                safado e meio nerd dela, que eu amo tanto.
+            </figcaption>
+            <img src="novinhos.jpg" alt="sugar mommy">
+            <figcaption>Também foi nessa época que ela desenvolveu seu
+                interesse por caras mais novos, que facilitou um pouco
+                a conquistar o coração dessa donzela.
+            </figcaption>
+            <img src="familia.jpg" alt="familia">
+            <figcaption>Foi criada por uma familia que se encaixa perfeitamente
+                na música do programa A Grande Família, muito animada e unida, grudada 
+                numa Vózinha que fazia tudo por ela. A combinação disso tudo
+                resultou na pessoa mais leal e de família que já conheci, que me faz
+                querer ser igual e me faça ver que ela é a mãe perfeita pros meus filhos.
+            </figcaption>
+            <img src="cdf.png" alt="cdf">
+            <figcaption>O pai sempre estimulava ela ler e estudar, que fez com que 
+                ela fosse muito inteligente e se interessasse por caras mais inteligentes,
+                outra coisa que facilitou a conquista do coração dela, já que sou o cara mais inteligente
+                do Edifício Saint Marie.
+            </figcaption>
+            <img src="gotica.jpg" alt="gotics">
+            <figcaption>O pai dela precisou se mudar algumas vezes por conta do trabalho,
+                o que fez com que ela sempre estivesse perdendo bons amigos. Foi ai que ela
+                desenvolveu um pouquinho de dificuldade de confiar nas pessoas, mas que vou mostrar
+                pra ela que comigo não precisa disso.
+
+            </figcaption>
+            <img src="eu.png" alt="biro biro">
+            <figcaption>                
+                Ao longo da vida teve a coragem de se envolver com alguns caras e mal ela sabia
+                que o amor da vida dela era esse pitel de cabelos enrolados, que desde aquela 
+                época sonhava em encontrar uma menina igual a ela em algum joguinho online (que ela também jogava).
+                Ela sempre foi muito apaixonada em <em>quase</em> todos que ficou, muito fofa
+                e romântica como se estivesse vivendo um filme romântico água com açucar.
+                Porém alguns tiveram a coragem de machucar essa menina perfeita e fizeram ela se tornar
+                uma espécie de pinscher que é fofo ao mesmo tempo.
+            </figcaption>
+            <img src="professor.png" alt="professor">
+            <figcaption>                
+                E a combinação de todos esses acontecimentos (e muitas outros), foram montando essa
+                mulher complexa e ao mesmo tempo simples, com muitas qualidades e poucos defeitos,
+                que se encaixam na minha complexidade esquisita, com muitos defeitos e poucas qualidades,
+                (que aos poucos ela está fazendo ser o contrário).
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="navigation">
+        <button onclick="location.href='main.html'">Voltar</button>
+        <button onclick="location.href='encontro.html'">Avançar</button>
+    </div>
+</body>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .navigation button {
+        background-color: #333;
+        color: #fff;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: #555;
+    }
+</style>
+</html>

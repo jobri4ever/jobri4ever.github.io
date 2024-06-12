@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-image: linear-gradient(to bottom, #50bbec, #f5f5dc);
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        figcaption {
+            margin: 1px;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+            }
+            .gallery img {
+                margin: 10px auto;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>O encontro</h2>
+    <div class="gallery">
+        <figure>
+            <img src="bonde do golpe.jpg" alt="bonde do golpe">
+            <figcaption>Agora, em 2022, depois de vários amores, e após o fim de um que deixou
+                ela meio desiludida, resolveu criar o bastante conhecido <em>Bonde do Golpe</em>,
+                que saia por ai conquistado corações e iludindo vários caras inocentes.
+            <img src="safado.JPG" alt="sugar mommy">
+                <figcaption>Na mesma época eu estava acabando de sair de um longo relacionamento,
+                    e estava numa fase de querer curtir a vida, estava malhando, saindo pra calouradas
+                    a fim de explorar o mundo de solteiro, que não vivi na minha fase mais jovem. Estava
+                    bem, administrando uns contatinhos, com a cabeça de que não ia namorar tão cedo (inocente).
+            </figcaption>
+            <img src="foto1.jpg" alt="encontro">
+            <figcaption>Foi quando uns amigos me chamaram pra "conhecer" o <em>Bonde do Golpe</em>, que nem sabiamos
+                que estavamos sendo vítimas, e eu fui conhecer nada mais, nada menos,
+                que a integrante mais perigosa, Brida Alcantara Martins. Que como já disse,
+                tinha preferência por caras mais novos e os iludia com facilidade devido sua vasta experiência.
+                Nem cheguei no local e já tomei o bote, enfeitiçado com o beijo dela, já fiquei doido pra ver
+                novamente e já segui no Instagram na hora que sai do encontro.
+            </figcaption>
+            <img src="cai no golpe.jpg" alt="deu ruim, cai no golpe">
+            <figcaption>Não deu outra, já começamos a conversar adoidados, ela só no interesse de me iludir
+                e se distrair, e eu já louco pra ver ela, com inícios de sintomas de paixão. Não deu uma semana
+                e fui buscar ela para um jantar romântico na minha casa, onde o cardápio principal era vinho e amendoim.
+                Nesse dia ela me surpreendeu com sua safadeza insana, que fez a mente de um cara inocente
+                como eu explodir. Transamos e conversamos a noite toda, parecia que a gente já tinha uma intimidade
+                absurda, "que conexão maravilhosa era aquela?" fiquei me perguntando. E assim seguimos, conversando
+                todos os dias, se vendo quase todo final de semana, e aos poucos deixando os contatinhos de lado.
+            </figcaption>
+            <img src="rio.jpg" alt="rio">
+            <figcaption>Em um desses finais de semana, ela do nada animou de ir pro rio comigo conhecer
+                minha banda preferida, chamamos uns amigos e fomos. Tivemos umas experiências malucas naquela viajem,
+                e nos aproximamos cada vez mais, eu já estava sentindo uns ciúmes de algumas coisas e já via
+                que aquela golpista estava me afetando. Eu, que acabei de sair de um relacionamento de 8 anos,
+                estava me apaixonando por uma menina toda bagunçada com os sentimentos com ex? Como me meti nessa?
+                Além de tudo, passava na minha cabeça, "Será que isso é carência?"
+            </figcaption>
+            <img src="long.jpg" alt="role">
+            <figcaption>Quando voltamos de viagem eu já estava apaixonadinho, só que negando cada vez mais.
+                Tinha acabado de sair de um relacionamento de 8 anos, estava me apaixonando por
+                uma menina toda bagunçada com os sentimentos com ex? Como me meti nessa?
+                Além de tudo, passava na minha cabeça, "Será que isso é carência?", "Ta certo meu sentimento?"
+                Só que eu, como um bom maconheiro que fuma desde os 12, totalmente dissociado dos sentimentos,
+                não sabia entender o que estava sentindo e fui tentando entender aos poucos. E ela, com toda
+                a paciência e várias desconfianças esquisitas, me esperou decifrar essa bagunça que é minha mente.
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="navigation">
+        <button onclick="location.href='intro.html'">Voltar</button>
+        <button onclick="location.href='intro.html'">Avançar</button>
+    </div>
+</body>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .navigation button {
+        background-color: #333;
+        color: #fff;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: #555;
+    }
+</style>
+</html>
