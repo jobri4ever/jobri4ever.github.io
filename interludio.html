@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Galeria</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-image: linear-gradient(to bottom, #50bbec, #f5f5dc);
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        figcaption {
+            margin: 1px;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+            }
+            .gallery img {
+                margin: 10px auto;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Interludio</h2>
+    <div class="gallery">
+        <figure>
+            <img src="2 deitadas.jpg" alt="minha vida toda">
+            <figcaption>Mesmo no nosso caos, continuavamos colecionando momentos especiais: risadas, viagens, passeios, comidas, sexos malucos,
+                bebedeiras, filmes e séries legais. Fomos entrelaçando nossas famílias, eu cada vez mais próximo da dela e ela cada vez mais próxima
+                da minha, entrelaçando amigos, entrelaçando planos e fazendo coisas pra eles darem certo. Um motivando o outro a ser melhor, mesmo ela
+                fazendo isso de uma maneira meio pinscher, fomos melhorando como pessoa em um geral, juntos. 
+            </figcaption>
+            <img src="caraiva.jpg" alt="minha vida toda">
+            <figcaption>E quero continuar fazendo isso: cada vez me aproximar mais de você, me esforçar cada dia pra ser melhor pra você e cada vez entrelaçar nossas vidas com você, concretizando todos
+                nossos planos e fazendo todos darem certo.<br><br>
+                Esse ano vai ser meio difícil pra gente, pois preciso finalizar um ciclo e fazer um dinheirinho pra gente continuar a concretizar nossos planos,
+                então acredito que não vá ser tão emocionante igual os nossos passados. Porém quero te fazer um convite: vamos pra Caraíva dia 17/04/2025 colecionar
+                mais uns pores do sol? Tá meio longe mas já quero começar a concretizar um plano muito importante.
+            </figcaption>
+        </figure>
+    </div>
+    
+    <div class="navigation">
+        <button onclick="location.href='the love.html'">Voltar</button>
+    </div>
+</body>
+
+<style>
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .navigation button {
+        background-color: #333;
+        color: #fff;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation button:hover {
+        background-color: #555;
+    }
+</style>
+</html>
